@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">Gosha</string>
+    <string name="app_name">My Application Gosha</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_e_mail">E-mail</string>
+    <string name="btn_password">Password</string>
+    <string name="btn_sign_in">Sign in</string>
+    <string name="btn_sign_up">Sign up</string>
+    <string name="et_f_name_reg">fName</string>
+    <string name="et_l_name_reg">LName</string>
+    <string name="et_email_reg">E-mail</string>
+    <string name="et_password_reg">Password</string>
+    <string name="btn_to_regist">Submit</string>
 </resources>
