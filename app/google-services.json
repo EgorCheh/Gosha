@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "812753719318",
+    "firebase_url": "https://bacdb-e531c.firebaseio.com",
+    "project_id": "bacdb-e531c",
+    "storage_bucket": "bacdb-e531c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812753719318:android:30e9d09a26b25dce",
+        "android_client_info": {
+          "package_name": "com.example.gosha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812753719318-c47hsu0dn3sqakefb7oqe0rgib0p4oau.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gosha",
+            "certificate_hash": "e4fc2bbe19d178a5d2bde8caf577961443cb3db5"
+          }
+        },
+        {
+          "client_id": "812753719318-onusqs7p093dhvt8soq7sqk2uc380oso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClNNXBSHBc3OoTFCpti2rHjVP9Y0nrnXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812753719318-onusqs7p093dhvt8soq7sqk2uc380oso.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
