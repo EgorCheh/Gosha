@@ -36,6 +36,7 @@ public class Menu extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         progressBar = findViewById(R.id.progressBar2);
         mAuth =FirebaseAuth.getInstance();
+
         imageView = findViewById(R.id.imageView);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
