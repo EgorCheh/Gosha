@@ -19,7 +19,7 @@
         android:layout_marginBottom="8dp"
         android:text="Registration"
         android:textColor="#DBD6D6"
-        android:textSize="24"
+        android:textSize="24sp"
         app:fontFamily="@font/carter_one"
         app:layout_constraintBottom_toTopOf="@+id/et_f_name_reg"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,8 +44,8 @@
 
     <EditText
         android:id="@+id/et_l_name_reg"
-        android:layout_width="297"
-        android:layout_height="67"
+        android:layout_width="297dp"
+        android:layout_height="67dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -60,8 +60,8 @@
 
     <EditText
         android:id="@+id/et_email_reg"
-        android:layout_width="297"
-        android:layout_height="67"
+        android:layout_width="297dp"
+        android:layout_height="67dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -76,8 +76,8 @@
 
     <EditText
         android:id="@+id/et_password_reg"
-        android:layout_width="297"
-        android:layout_height="67"
+        android:layout_width="297dp"
+        android:layout_height="67dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
