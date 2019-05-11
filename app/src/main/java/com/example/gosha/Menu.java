@@ -1,9 +1,12 @@
 package com.example.gosha;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.SimpleAdapter;
@@ -25,12 +28,22 @@ public class Menu extends AppCompatActivity {
     private HashMap<String, Object> job;
     private ArrayList<HashMap<String, Object>> jobs = new ArrayList<>();
     private ProgressBar progressBar ;
+    private ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         progressBar = findViewById(R.id.progressBar2);
         mAuth =FirebaseAuth.getInstance();
+        imageView = findViewById(R.id.imageView);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),ProfileMenu.class);
+                startActivity(intent);
+
+            }
+        });
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("Jobs")
                 .get()
