@@ -11,8 +11,8 @@
     <string name="btn_password">Password</string>
     <string name="btn_sign_in">Sign in</string>
     <string name="btn_sign_up">Sign up</string>
-    <string name="et_f_name_reg">fName</string>
-    <string name="et_l_name_reg">LName</string>
+    <string name="et_f_name_reg">Name</string>
+    <string name="et_l_name_reg">Last Name</string>
     <string name="et_email_reg">E-mail</string>
     <string name="et_password_reg">Password</string>
     <string name="btn_to_regist">Submit</string>
