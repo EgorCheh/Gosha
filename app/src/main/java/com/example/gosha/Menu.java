@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
@@ -59,6 +60,11 @@ public class Menu extends AppCompatActivity {
                                 job = new HashMap<>();
                                 job.put("title",  document.getData().get("Title"));
                                 job.put("price",  document.getData().get("Price"));
+                                job.put("Contacts",  document.getData().get("Contacts"));
+                                job.put("Description",  document.getData().get("Description"));
+                                job.put("Name",  document.getData().get("Name"));
+                                job.put("Address",  document.getData().get("Address"));
+                                job.put("id",document.getId());
                                 jobs.add(job);
 
 
@@ -79,6 +85,25 @@ public class Menu extends AppCompatActivity {
 
         adapter = new SimpleAdapter(this, jobs, R.layout.item_lv_menu, from, to);
         ListView listView = findViewById(R.id.lv_menu);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Intent intent = new Intent(getApplicationContext(),JobDetail.class);
+
+                intent.putExtra("id",jobs.get(position).get("id").toString());
+                intent.putExtra("title",jobs.get(position).get("title").toString());
+                intent.putExtra("price",jobs.get(position).get("price").toString());
+                intent.putExtra("Description",jobs.get(position).get("Description").toString());
+                intent.putExtra("Contacts",jobs.get(position).get("Contacts").toString());
+                intent.putExtra("Name",jobs.get(position).get("Name").toString());
+                intent.putExtra("Address",jobs.get(position).get("Address").toString());
+
+                startActivity(intent);
+
+            }
+        });
+
         listView.setAdapter(adapter);
     }
 }

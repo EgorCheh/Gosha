@@ -1,21 +1,12 @@
 package com.example.gosha;
 
 public class Job {
-    private String Category;
     private String Title;
     private Float Salary;
     private String Description;
     private String Address;
     private String ContactInfo;
     private String Mail;
-
-    public String getCategory() {
-        return Category;
-    }
-
-    public void setCategory(String category) {
-        Category = category;
-    }
 
     public String getTitle() {
         return Title;
@@ -68,7 +59,7 @@ public class Job {
     @Override
     public String toString() {
         return "Job{" +
-                "Category='" + Category + '\'' +
+
                 ", Title='" + Title + '\'' +
                 ", Salary=" + Salary +
                 ", Description='" + Description + '\'' +
@@ -78,8 +69,7 @@ public class Job {
                 '}';
     }
 
-    public Job(String category, String title, Float salary, String description, String address, String contactInfo, String mail) {
-        Category = category;
+    public Job(String title, Float salary, String description, String address, String contactInfo, String mail) {
         Title = title;
         Salary = salary;
         Description = description;
