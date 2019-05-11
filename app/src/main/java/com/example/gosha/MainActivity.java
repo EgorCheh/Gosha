@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-        Log.d(TAG," create  "+mAuth.getCurrentUser());
+        Log.d("asadasdada","Main  "+mAuth.getCurrentUser());
     }
 
     @Override
