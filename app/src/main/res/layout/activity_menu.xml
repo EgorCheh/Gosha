@@ -19,7 +19,7 @@
         android:layout_marginBottom="8dp"
         android:text="All Jobs"
         android:textColor="#DBD6D6"
-        android:textSize="24sp"
+        android:textSize="36sp"
         app:fontFamily="@font/carter_one"
         app:layout_constraintBottom_toTopOf="@+id/lv_menu"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,8 +75,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="49dp"
-        android:layout_height="63dp"
+        android:layout_width="52dp"
+        android:layout_height="65dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -85,10 +85,10 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
-        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55"
+        app:layout_constraintVertical_bias="0.644"
         app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
 </android.support.constraint.ConstraintLayout>
