@@ -23,7 +23,7 @@ public class JobDetail extends AppCompatActivity {
         tvTitle.setText(arguments.getString("title"));
         tvPrice.setText(arguments.getString("price"));
         tvDescription.setText(arguments.getString("Description"));
-        String contact=arguments.getString("Name")+" "+arguments.getString("Contacts")+" "+arguments.getString("Address");
+        String contact=arguments.getString("Name")+"\n"+arguments.getString("Contacts")+"\n"+arguments.getString("Address");
         tvContacts.setText(contact);
     }
 }
