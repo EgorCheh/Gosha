@@ -1,112 +1,131 @@
 package com.example.gosha;
 
-import java.util.UUID;
+
 
 public class User {
-    private String Fname;
-    private String Sname;
-    private String UserInfo;
-    private Integer Age;
-    private Integer Exp;
-    private Integer Level;
-    private String Mail;
-    private String Pass;
-    private UUID id;
+    private String fname;
+    private String sname;
+    private String userInfo;
+    private String age;
+    private Integer exp;
+    private Integer level;
+    private String mail;
+    private String pass;
+    private String id;
+    private String address;
+    private String contact;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
+    }
 
     public String getFname() {
-        return Fname;
+        return fname;
     }
 
     public void setFname(String fname) {
-        Fname = fname;
+        this.fname = fname;
     }
 
     public String getSname() {
-        return Sname;
+        return sname;
     }
 
     public void setSname(String sname) {
-        Sname = sname;
+        this.sname = sname;
     }
 
     public String getUserInfo() {
-        return UserInfo;
+        return userInfo;
     }
 
     public void setUserInfo(String userInfo) {
-        UserInfo = userInfo;
+        this.userInfo = userInfo;
     }
 
-    public Integer getAge() {
-        return Age;
+    public String getAge() {
+        return age;
     }
 
-    public void setAge(Integer age) {
-        Age = age;
+    public void setAge(String age) {
+        this.age = age;
     }
 
 
     public Integer getExp() {
-        return Exp;
+        return exp;
     }
 
     public void setExp(Integer exp) {
-        Exp = exp;
+        this.exp = exp;
     }
 
     public Integer getLevel() {
-        return Level;
+        return level;
     }
 
     public void setLevel(Integer level) {
-        Level = level;
+        this.level = level;
     }
 
     public String getMail() {
-        return Mail;
+        return mail;
     }
 
     public void setMail(String mail) {
-        Mail = mail;
+        this.mail = mail;
     }
 
     public String getPass() {
-        return Pass;
+        return pass;
     }
 
     public void setPass(String pass) {
-        Pass = pass;
+        this.pass = pass;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "Fname='" + Fname + '\'' +
-                ", Sname='" + Sname + '\'' +
-                ", UserInfo='" + UserInfo + '\'' +
-                ", Age=" + Age +
-                ", Exp=" + Exp +
-                ", Level=" + Level +
-                ", Mail='" + Mail + '\'' +
-                ", Pass='" + Pass + '\'' +
+                "fname='" + fname + '\'' +
+                ", sname='" + sname + '\'' +
+                ", userInfo='" + userInfo + '\'' +
+                ", age=" + age +
+                ", exp=" + exp +
+                ", level=" + level +
+                ", mail='" + mail + '\'' +
+                ", pass='" + pass + '\'' +
                 '}';
     }
 
-    public UUID getId() {
+    public String getId() {
         return id;
     }
 
-    public User(String fname, String sname, String userInfo, Integer age, Integer exp, Integer level, String mail, String pass) {
-        id= UUID.randomUUID();
-        Fname = fname;
-        Sname = sname;
-        UserInfo = userInfo;
-        Age = age;
-        Exp = exp;
-        Level = level;
-        Mail = mail;
-        Pass = pass;
+    public User(String id,String fname, String sname, String userInfo, String age, Integer exp, Integer level, String mail, String pass) {
+        this.id = id;
+        this.fname = fname;
+        this.sname = sname;
+        this.userInfo = userInfo;
+        this.age = age;
+        this.exp = exp;
+        this.level = level;
+        this.mail = mail;
+        this.pass = pass;
     }
 
-
+    public User() {
+    }
 }

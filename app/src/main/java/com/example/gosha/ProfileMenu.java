@@ -3,7 +3,6 @@ package com.example.gosha;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -18,8 +17,6 @@ public class ProfileMenu extends AppCompatActivity implements View.OnClickListen
 
         Button btnProfile,btnAll,btnMy,btnCreate,btnInfo,btnLogOut;
         final FirebaseAuth mAuth=FirebaseAuth.getInstance();
-
-       Log.d("asadasdada","Profile  "+mAuth.getCurrentUser().getEmail());
 
 
         btnLogOut=findViewById(R.id.log_out);
@@ -62,6 +59,7 @@ public class ProfileMenu extends AppCompatActivity implements View.OnClickListen
             }
             case R.id.btn_profile_profmenu:
             {
+                startActivity(new Intent(getApplicationContext(),ProfileDetailActivity.class));
 
                 break;
             }

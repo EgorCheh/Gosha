@@ -33,8 +33,8 @@ public class Registration extends AppCompatActivity {
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                currentUser = new User(etFname.getText().toString(), etLname.getText().toString(), null, null, null, null, etEmail.getText().toString(), etPassword.getText().toString());
-                signUp(currentUser.getMail(),currentUser.getPass());
+
+                signUp(etEmail.getText().toString(),etPassword.getText().toString());
             }
 
         });
@@ -48,6 +48,7 @@ public class Registration extends AppCompatActivity {
                 if(task.isSuccessful())
                 {
                     Toast.makeText(getApplicationContext(), "success", Toast.LENGTH_SHORT).show();
+                    currentUser = new User(mAuth.getUid(),etFname.getText().toString(), etLname.getText().toString(), " ", " ", null, null, etEmail.getText().toString(), etPassword.getText().toString());
                     db.collection("Users").document(currentUser.getId().toString()).set(currentUser);
                     finish();
                 }
