@@ -2,7 +2,7 @@ package com.example.gosha;
 
 public class Job {
     private String Title;
-    private Float Salary;
+    private Float Price;
     private String Description;
     private String Address;
     private String ContactInfo;
@@ -17,11 +17,11 @@ public class Job {
     }
 
     public Float getSalary() {
-        return Salary;
+        return Price;
     }
 
     public void setSalary(Float salary) {
-        Salary = salary;
+        Price = salary;
     }
 
     public String getDescription() {
@@ -61,7 +61,7 @@ public class Job {
         return "Job{" +
 
                 ", Title='" + Title + '\'' +
-                ", Salary=" + Salary +
+                ", Salary=" + Price +
                 ", Description='" + Description + '\'' +
                 ", Address='" + Address + '\'' +
                 ", ContactInfo='" + ContactInfo + '\'' +
@@ -71,7 +71,7 @@ public class Job {
 
     public Job(String title, Float salary, String description, String address, String contactInfo, String mail) {
         Title = title;
-        Salary = salary;
+        Price = salary;
         Description = description;
         Address = address;
         ContactInfo = contactInfo;

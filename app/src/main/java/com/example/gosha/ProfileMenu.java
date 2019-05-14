@@ -75,7 +75,7 @@ public class ProfileMenu extends AppCompatActivity implements View.OnClickListen
             }
             case R.id.btn_create_profmenu :
             {
-
+                startActivity(new Intent(getApplicationContext(),SelectCategory.class));
                 break;
             }
             default:break;
