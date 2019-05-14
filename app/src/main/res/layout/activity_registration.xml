@@ -21,13 +21,13 @@
         android:textColor="#DBD6D6"
         android:textSize="24sp"
         app:fontFamily="@font/carter_one"
-        app:layout_constraintBottom_toTopOf="@+id/et_f_name_reg"
+        app:layout_constraintBottom_toTopOf="@+id/et_descr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et_f_name_reg"
+        android:id="@+id/et_descr"
         android:layout_width="297dp"
         android:layout_height="67dp"
         android:layout_marginStart="8dp"
@@ -56,7 +56,7 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_f_name_reg" />
+        app:layout_constraintTop_toBottomOf="@+id/et_descr" />
 
     <EditText
         android:id="@+id/et_email_reg"
