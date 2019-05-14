@@ -59,12 +59,12 @@ public class Menu extends AppCompatActivity {
 
 
                                 job = new HashMap<>();
-                                job.put("title",  document.getData().get("Title"));
-                                job.put("price",  document.getData().get("Price"));
-                                job.put("Contacts",  document.getData().get("Contacts"));
-                                job.put("Description",  document.getData().get("Description"));
-                                job.put("Name",  document.getData().get("Name"));
-                                job.put("Address",  document.getData().get("Address"));
+                                job.put("title",  document.getData().get("title"));
+                                job.put("price",  document.getData().get("price"));
+                                job.put("contact",  document.getData().get("contact"));
+                                job.put("description",  document.getData().get("description"));
+                                job.put("address",  document.getData().get("address"));
+                                job.put("mail",  document.getData().get("mail"));
                                 job.put("id",document.getId());
                                 jobs.add(job);
 
@@ -92,14 +92,13 @@ public class Menu extends AppCompatActivity {
 
                 Intent intent = new Intent(getApplicationContext(),JobDetail.class);
 
-                intent.putExtra("id",jobs.get(position).get("id").toString());
+                //intent.putExtra("id",jobs.get(position).get("id").toString());
                 intent.putExtra("title",jobs.get(position).get("title").toString());
                 intent.putExtra("price",jobs.get(position).get("price").toString());
-                intent.putExtra("Description",jobs.get(position).get("Description").toString());
-                intent.putExtra("Contacts",jobs.get(position).get("Contacts").toString());
-                intent.putExtra("Name",jobs.get(position).get("Name").toString());
-                intent.putExtra("Address",jobs.get(position).get("Address").toString());
-
+                intent.putExtra("Description",jobs.get(position).get("description").toString());
+                intent.putExtra("Contacts",jobs.get(position).get("contact").toString());
+                intent.putExtra("Address",jobs.get(position).get("address").toString());
+                intent.putExtra("Name",jobs.get(position).get("mail").toString());
                 startActivity(intent);
 
             }

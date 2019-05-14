@@ -1,13 +1,15 @@
 package com.example.gosha;
 
+import java.util.UUID;
+
 public class Job {
     private String Title;
-    private Float Price;
+    private double Price;
     private String Description;
     private String Address;
-    private String ContactInfo;
+    private String Contact;
     private String Mail;
-
+    private UUID id;
     public String getTitle() {
         return Title;
     }
@@ -16,12 +18,12 @@ public class Job {
         Title = title;
     }
 
-    public Float getSalary() {
+    public double getPrice() {
         return Price;
     }
 
-    public void setSalary(Float salary) {
-        Price = salary;
+    public void setPrice(double price) {
+        Price = price;
     }
 
     public String getDescription() {
@@ -40,12 +42,12 @@ public class Job {
         Address = address;
     }
 
-    public String getContactInfo() {
-        return ContactInfo;
+    public String getContact() {
+        return Contact;
     }
 
-    public void setContactInfo(String contactInfo) {
-        ContactInfo = contactInfo;
+    public void setContact(String contact) {
+        Contact = contact;
     }
 
     public String getMail() {
@@ -61,20 +63,25 @@ public class Job {
         return "Job{" +
 
                 ", Title='" + Title + '\'' +
-                ", Salary=" + Price +
+                ", Price=" + Price +
                 ", Description='" + Description + '\'' +
                 ", Address='" + Address + '\'' +
-                ", ContactInfo='" + ContactInfo + '\'' +
+                ", Contact='" + Contact + '\'' +
                 ", Mail='" + Mail + '\'' +
                 '}';
     }
 
-    public Job(String title, Float salary, String description, String address, String contactInfo, String mail) {
+    public UUID getId() {
+        return id;
+    }
+
+    public Job(String title, double price, String description, String address, String contacts, String mail) {
+        id =UUID.randomUUID();
         Title = title;
-        Price = salary;
+        Price = price;
         Description = description;
         Address = address;
-        ContactInfo = contactInfo;
+        Contact = contacts;
         Mail = mail;
     }
 
