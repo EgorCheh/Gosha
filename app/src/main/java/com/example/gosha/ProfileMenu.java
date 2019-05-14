@@ -24,7 +24,7 @@ public class ProfileMenu extends AppCompatActivity implements View.OnClickListen
         btnAll = findViewById(R.id.btn_all_jobs_profmenu);
         btnMy = findViewById(R.id.btn_my_jobs_profmenu);
         btnCreate = findViewById(R.id.btn_create_profmenu);
-        btnInfo = findViewById(R.id.btn_info_profmenu);
+
 
         btnLogOut.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +45,7 @@ public class ProfileMenu extends AppCompatActivity implements View.OnClickListen
         btnCreate.setOnClickListener(this);
         btnProfile.setOnClickListener(this);
         btnMy.setOnClickListener(this);
-        btnInfo.setOnClickListener(this);
+
     }
 
     @Override
@@ -68,11 +68,7 @@ public class ProfileMenu extends AppCompatActivity implements View.OnClickListen
 
                 break;
             }
-            case R.id.btn_info_profmenu :
-            {
 
-                break;
-            }
             case R.id.btn_create_profmenu :
             {
                 startActivity(new Intent(getApplicationContext(),SelectCategory.class));
