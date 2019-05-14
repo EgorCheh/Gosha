@@ -25,7 +25,7 @@ public class Registration extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
         mAuth = FirebaseAuth.getInstance();
-        etFname=findViewById(R.id.et_f_name_reg);
+        etFname=findViewById(R.id.et_descr);
         etLname=findViewById(R.id.et_l_name_reg);
         etEmail=findViewById(R.id.et_email_reg);
         etPassword=findViewById(R.id.et_password_reg);
