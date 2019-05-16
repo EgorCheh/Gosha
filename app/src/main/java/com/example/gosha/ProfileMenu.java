@@ -65,7 +65,9 @@ public class ProfileMenu extends AppCompatActivity implements View.OnClickListen
             }
             case R.id.btn_my_jobs_profmenu :
             {
-
+                Intent intent =new Intent(getApplicationContext(),MyJobs.class);
+                intent.putExtra("activity","my");
+                startActivity(intent);
                 break;
             }
 
